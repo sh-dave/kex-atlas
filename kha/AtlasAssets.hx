@@ -8,17 +8,22 @@ class AtlasAssets {
 		LoaderImpl.loadBlobFromDescription(description, function( blob : Blob ) {
 			switch (fmt) {
 #if haxe_format_starling
-				case StarlingXml:
+				case AtlasFormat.StarlingXml:
 					var xml = Xml.parse(blob.toString());
 					var ta = new format.starling.Reader(xml).read();
+					var clean1 = haxe.io.Path.withoutExtension(ta.imagePath);
+					var clean2 = kha.internal.FilenameTools.sanitizeId(clean1);
 
-					kha.Assets.loadImage(haxe.io.Path.withoutExtension(ta.imagePath), function( image : Image ) {
+					kha.Assets.loadImage(clean2, function( image : Image ) {
 						done([
 							for (id in ta.subTextures.keys())
 								id => kha.internal.StarlingAtlasMapper.mapSubTexture(ta.subTextures.get(id), image)
 						]);
 					});
 #end
+				case AtlasFormat.TexturePackerJsonArray:
+					// haxe.macro.Context.error('TODO (DK) IMPLEMENT ME');
+					throw 'TODO (DK)AtlasAssets.loadAtlas / TexturePackerJsonArray implement me';
 			}
 		});
 	}

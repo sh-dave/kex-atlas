@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>4.2.3</string>
         <key>fileName</key>
-        <string>/home/dave/projects/kha-textureatlas/Example/common/Resources/birds.tps</string>
+        <string>/home/dave/projects/kha-textureatlas/Example/common/Resources/birds-starling.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -36,7 +36,7 @@
         <key>dataFormat</key>
         <string>sparrow</string>
         <key>textureFileName</key>
-        <filename>../Assets/birds.png</filename>
+        <filename>../Assets/birds-starling.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>pvrCompressionQuality</key>
@@ -141,7 +141,7 @@
             <key>data</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>../Sheets/birds.xml</filename>
+                <filename>../Sheets/birds-starling.xml</filename>
             </struct>
         </map>
         <key>multiPack</key>

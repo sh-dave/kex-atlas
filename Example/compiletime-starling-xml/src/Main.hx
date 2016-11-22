@@ -2,7 +2,7 @@ package;
 
 using kha.graphics2.AtlasTools;
 
-@:build(kha.internal.StarlingAtlasBuilder.build('../../common/Sheets/birds.xml', 'birds'))
+@:build(kha.internal.StarlingAtlasBuilder.build('../../common/Sheets/birds-starling.xml', 'birds_starling'))
 private class BirdsAtlas {}
 
 class Main {

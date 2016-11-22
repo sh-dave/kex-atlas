@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
-<!-- $TexturePacker:SmartUpdate:75b361815b3e77e9a596c553aecd9724:5c6050466379af4c6ca3f381bc1db2f9:dcfa81178d93acd8339788209e144b7e$ -->
-<TextureAtlas imagePath="birds.png" width="128" height="256">
+<!-- $TexturePacker:SmartUpdate:a47ad7da5a7aec79c55e7ef6c298dc1b:5c6050466379af4c6ca3f381bc1db2f9:25e4b299dcd78d8b3c769da6a5a760af$ -->
+<TextureAtlas imagePath="birds-starling.png" width="128" height="256">
     <SubTexture name="owl" x="0" y="0" width="128" height="128"/>
     <SubTexture name="rubber-duck" x="0" y="128" width="128" height="128"/>
 </TextureAtlas>
