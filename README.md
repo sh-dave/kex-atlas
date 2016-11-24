@@ -1,8 +1,12 @@
-# kha-textureatlas
+# kha-textureatlas-extensions
 
 ## supported formats
 - [x] starling's xml format (requires optional library [haxe-format-starling](https://github.com/sh-dave/haxe-format-starling))
 - [x] texturepacker json array
+
+## supported options
+- [x] trimming
+- [ ] rotation
 
 ## compiletime usage
 ```haxe
@@ -10,7 +14,6 @@ using kha.graphics2.AtlasTools; // import g2.drawSubTexture / g2.drawScaledSubTe
 
 // define the source for the atlas
 @:build(kha.internal.TPJsonArrayBuilder.build('../../common/Sheets/birds-jsonarray.json', 'birds_jsonarray'))
-//@:build(kha.internal.StarlingAtlasBuilder.build('../../common/Sheets/birds-starling.xml', 'birds_starling'))
 private class BirdsAtlas {}
 
 class Main {

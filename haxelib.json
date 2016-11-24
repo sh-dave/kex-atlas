@@ -1,6 +1,6 @@
 {
-	"name" : "kha-textureatlas",
+	"name" : "kha-textureatlas-extension",
 	"license" : "zlib",
-	"url" : "https://github.com/sh-dave/kha-textureatlas",
+	"url" : "https://github.com/sh-dave/kha-textureatlas-extension",
 	"contributors" : ["sh-dave"]
 }
