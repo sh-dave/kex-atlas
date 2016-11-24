@@ -7,8 +7,6 @@ import haxe.macro.Expr;
 import haxe.macro.Expr.Field;
 import sys.io.File;
 
-using StringTools;
-
 class StarlingAtlasBuilder {
 	macro public static function build( filename : String, image : String ) : Array<Field> {
 		var fields = Context.getBuildFields();
@@ -19,11 +17,12 @@ class StarlingAtlasBuilder {
 		for (id in subTextures.keys()) {
 			var st = subTextures.get(id);
 			fields.push({
-				name : sanitizeId(id),
+				name : kha.internal.FilenameTools.sanitizeId(id),
 				kind : FVar(macro : kha.SubTexture, macro {
 					image : kha.Assets.images.$image,
 					sx : $v{st.x}, sy : $v{st.y}, sw : $v{st.width}, sh : $v{st.height},
-					fx : $v{st.frameX}, fy : $v{st.frameY}, fw : $v{st.frameWidth}, fh : $v{st.frameHeight},
+					fx : -$v{st.frameX != null ? st.frameX : 0}, fy : -$v{st.frameY != null ? st.frameY : 0},
+					fw : $v{st.frameWidth != null ? st.frameWidth : st.width}, fh : $v{st.frameHeight != null ? st.frameHeight : st.height},
 					rotated : $v{st.rotated} 
 				}),
 				access : [APublic],
@@ -40,16 +39,6 @@ class StarlingAtlasBuilder {
 
 		return fields;
 	}
-
-	static inline function sanitizeId( id : String ) return id
-		.replace('-', '_')
-		.replace(' ', '_')
-		.replace('+', '_')
-		.replace('.', '_')
-		.replace('/', '_')
-		.replace(',', '_')
-		.replace('\\', '_')
-		.replace(';', '_');
 }
 
 #end

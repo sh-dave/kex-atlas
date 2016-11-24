@@ -2,8 +2,8 @@ package;
 
 using kha.graphics2.AtlasTools;
 
-@:build(kha.internal.StarlingAtlasBuilder.build('../../common/Sheets/birds-starling.xml', 'birds_starling'))
-private class BirdsAtlas {}
+@:build(kha.internal.StarlingAtlasBuilder.build('../../common/Sheets/items-starling.xml', 'items_starling'))
+private class ItemsAtlas {}
 
 class Main {
 	public static function main()
@@ -12,10 +12,10 @@ class Main {
 			kha.Assets.loadEverything.bind(setup)
 		);
 
-	static var birds : BirdsAtlas;
+	static var items : ItemsAtlas;
 
 	public static function setup() {
-		birds = new BirdsAtlas();
+		items  = new ItemsAtlas();
 		kha.System.notifyOnRender(render);
 	}
 
@@ -23,8 +23,11 @@ class Main {
 		var g2 = fb.g2;
 		
 		g2.begin();
-			g2.drawSubTexture(birds.owl, 16, 16);
-			g2.drawScaledSubTexture(birds.rubber_duck, 512, 0, 512, 512);
+			g2.drawScaledSubTexture(items.cupcake, 0, 0, items.cupcake.fw * 2, items.cupcake.fh * 2);
+			g2.drawSubTextureDebug(items.cupcake, 0, 0);
+			
+			g2.drawScaledSubTexture(items.brezel, 512, 0, items.brezel.fw * 2, items.brezel.fh * 2);
+			g2.drawSubTextureDebug(items.brezel, 512, 0);
 		g2.end();
 	}
 }

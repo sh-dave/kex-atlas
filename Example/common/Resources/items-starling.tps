@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>4.2.3</string>
         <key>fileName</key>
-        <string>/home/dave/projects/kha-textureatlas/Example/common/Resources/birds-starling.tps</string>
+        <string>/home/dave/projects/kha-textureatlas/Example/common/Resources/items-starling.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -36,7 +36,7 @@
         <key>dataFormat</key>
         <string>sparrow</string>
         <key>textureFileName</key>
-        <filename>../Assets/birds-starling.png</filename>
+        <filename>../Assets/items-starling.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>pvrCompressionQuality</key>
@@ -141,7 +141,7 @@
             <key>data</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>../Sheets/birds-starling.xml</filename>
+                <filename>../Sheets/items-starling.xml</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -176,7 +176,7 @@
             <key>trimMargin</key>
             <uint>1</uint>
             <key>trimMode</key>
-            <enum type="SpriteSettings::TrimMode">None</enum>
+            <enum type="SpriteSettings::TrimMode">Trim</enum>
             <key>tracerTolerance</key>
             <int>200</int>
             <key>heuristicMask</key>
@@ -188,8 +188,10 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">owl.png</key>
-            <key type="filename">rubber-duck.png</key>
+            <key type="filename">bagger.png</key>
+            <key type="filename">brezel.png</key>
+            <key type="filename">cupcake.png</key>
+            <key type="filename">snake.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -197,8 +199,7 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>owl.png</filename>
-            <filename>rubber-duck.png</filename>
+            <filename>.</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

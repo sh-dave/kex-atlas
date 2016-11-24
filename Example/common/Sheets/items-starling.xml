@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:eb3cd5c95c34fc086863997d27ea3bb7:4e5d95a36177fcd2c362b5ca8d1fc984:8a0de8787e90dd7c09e2c02d891ed805$ -->
+<TextureAtlas imagePath="items-starling.png" width="256" height="512">
+    <SubTexture name="bagger" x="0" y="0" width="188" height="149"/>
+    <SubTexture name="brezel" x="0" y="149" width="143" height="112" frameX="-56" frameY="-72" frameWidth="256" frameHeight="256"/>
+    <SubTexture name="cupcake" x="0" y="261" width="116" height="156"/>
+    <SubTexture name="snake" x="116" y="261" width="131" height="149"/>
+</TextureAtlas>
