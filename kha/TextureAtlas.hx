@@ -1,3 +1,3 @@
 package kha;
 
-typedef TextureAtlas = Map<String, SubTexture>;
+typedef TextureAtlas = haxe.ds.StringMap<SubTexture>;
