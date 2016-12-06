@@ -6,7 +6,7 @@
 
 ## supported options
 - [x] trimming
-- [ ] rotation
+- [ ] ~~rotation - not planned~~, [reasoning here](https://github.com/sh-dave/kha-textureatlas-extension/issues/2)
 
 ## compiletime usage
 ```haxe
