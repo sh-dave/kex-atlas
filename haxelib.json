@@ -1,6 +1,5 @@
 {
-	"name" : "kha-textureatlas-extension",
+	"name" : "kex-atlas-kha",
 	"license" : "zlib",
-	"url" : "https://github.com/sh-dave/kha-textureatlas-extension",
-	"contributors" : ["sh-dave"]
+	"url" : "https://github.com/sh-dave/kex-atlas-kha"
 }
