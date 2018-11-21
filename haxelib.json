@@ -1,5 +1,6 @@
 {
 	"name" : "kex-atlas-kha",
-	"license" : "zlib",
-	"url" : "https://github.com/sh-dave/kex-atlas-kha"
+	"url" : "https://github.com/sh-dave/kex-atlas.git",
+	"classPath": "src",
+	"license" : "zlib"
 }
