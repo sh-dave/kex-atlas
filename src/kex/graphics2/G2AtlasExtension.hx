@@ -1,5 +1,6 @@
 package kex.graphics2;
 
+import kha.FastFloat;
 import kha.graphics2.Graphics;
 import kex.internal.MathTools.linearRemap;
 
