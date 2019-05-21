@@ -1,8 +1,10 @@
 package kex;
 
+import kha.Image;
+
 @:structInit
 class SubTexture {
-	public var image: kha.Image;
+	public var image: Image;
 	public var sx: Int;
 	public var sy: Int;
 	public var sw: Int;
